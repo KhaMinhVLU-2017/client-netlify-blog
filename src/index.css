@@ -1,0 +1,61 @@
+/*CreateArticle222px*/
+.creArti_img {
+  margin: auto;
+  display: block;
+}
+/*SubArticle*/
+.SubArti{
+  text-align: center
+}
+/*Footer */
+.fix_footer {
+  background: linear-gradient(to top left, #4e555de8 , #cccccc);
+  min-height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/** Title Admin ***/
+.TitleAdmin {
+  font-family: initial;
+  font-weight: bold;
+  color: white;
+}
+/*Login*/
+@media (max-width: 321px){
+  .lg_error {
+    font-size: 10px
+  }
+}
+/*** MainAdmin ***/
+.mainAdmin {
+  margin-bottom: 95px;
+  background-image: url('./images/bg-Admin.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(5px);
+}
+/*** Responsive Admin ***/
+@media (max-width: 420px){
+  .adminSub {
+    padding: 0 !important;
+    margin-bottom: 215px;
+  }
+  .adminSub > div {
+    padding: 0;
+  }
+  .rootAdmin {
+    width: 110% !important;
+  }
+}
+@media (max-width: 321px) {
+  .rootAdmin {
+    width: 410px !important;
+  }
+}
