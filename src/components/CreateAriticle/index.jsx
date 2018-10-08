@@ -7,7 +7,8 @@ import { Redirect } from 'react-router-dom'
 import { instanceOf } from 'prop-types'
 import { withCookies, Cookies } from 'react-cookie'
 import config from '../../config'
-
+// eslint-disable-next-line
+import $ from 'jquery' 
 import FroalaEditor from 'react-froala-wysiwyg'
 
 class CreateArticle extends Component {
