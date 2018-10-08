@@ -15,7 +15,8 @@ import createHistory from 'history/createBrowserHistory'
 import ErrorMeo from './components/Error'
 import AdminState from './components/Admin'
 import { CookiesProvider, withCookies } from 'react-cookie'
-
+// eslint-disable-next-line
+import * as $ from 'jquery' 
 // Rich Editor wyswyg
 import 'froala-editor/js/froala_editor.pkgd.min.js'
 // Require Editor CSS files.
