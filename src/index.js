@@ -52,7 +52,7 @@ global.jQuery = $
 
 let initialState = {}
 let store
-
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 class RouteApp extends Component {
   componentWillMount () {
     let { cookies } = this.props
