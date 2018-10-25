@@ -6,6 +6,6 @@ var api = {
   // local: 'https://172.16.12.148:4000'
 }
 
-const socket = openSocket(api.local)
+const socket = openSocket(api.local + '/')
 
 export default { api, socket }
