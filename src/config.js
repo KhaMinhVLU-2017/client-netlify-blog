@@ -6,6 +6,8 @@ var api = {
   // local: 'https://172.16.12.148:4000'
 }
 
-const socket = openSocket(api.local)
+const socket = openSocket(api.local, {
+  path: '/blogserver/socket.io/'
+})
 
 export default { api, socket }
