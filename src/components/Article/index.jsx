@@ -39,7 +39,7 @@ class Article extends Component {
     let self = this
     config.socket.on('refesh', (response) => {
       if (response.data) {
-        console.log('Receive Server Complete')
+        console.log('Receive Server Complete ' + response)
         self.getListArt(false)
       }
     })
