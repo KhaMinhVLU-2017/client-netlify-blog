@@ -51,6 +51,7 @@ class TableListArt extends React.Component {
     let listMeo = this.state.list
     let self = this
     config.socket.on('refesh', (response) => {
+      console.log('Receive Server at Admin')
       if (response.data && this.state.mainHander) {
         self.crawApi()
       }
