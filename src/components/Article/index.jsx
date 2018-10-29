@@ -47,7 +47,7 @@ class Article extends Component {
       <main className='main-content bg-gray' style={{marginBottom: 150}}>
         <div className='row'>
           <div className='col-12 col-lg-6 offset-lg-3'>
-            {this.state.load ? <img className='creArti_img' src={loadedImg} alt='loaded' /> : listArt.map((item, index) => 
+            {this.state.load ? <img className='creArti_img' src={loadedImg} alt='loaded' /> : listArt.length > 0 ? listArt.map((item, index) => 
               <LazyLoad key={index} height={200} once>
                 <SubArticle
                   key={index}
@@ -58,7 +58,7 @@ class Article extends Component {
                   sapo={item.sapo}
                   idPost={item._id}
                 />
-              </LazyLoad>)}
+              </LazyLoad>) : <h1>Empty Post</h1>}
           </div>
         </div>
       </main>
